@@ -445,3 +445,44 @@ ul {
         font-size: 1.8rem;
     }
 }
+
+/* === Estrutura do Card para alinhamento correto === */
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* === Tabela de preços === */
+
+.price-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem 1.5rem;
+    margin-top: auto;              /* fixa os preços no rodapé do card */
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.price-table div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.price-table span {
+    color: #555;
+    font-weight: 500;
+}
+
+.price-table strong {
+    color: #FF6600;
+    font-weight: 700;
+}
